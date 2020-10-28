@@ -9,12 +9,6 @@ module.exports = {
   entry: {
     app: "./src/index.js",
   },
-  devtool: "inline-source-map",
-  devServer: {
-    contentBase: "./dist",
-    port: 8081,
-    hot: true,
-  },
   output: {
     filename: "[name].bundle.js",
     path: distPath,
