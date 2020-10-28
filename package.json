@@ -7,9 +7,11 @@
     "build": "webpack --config webpack.config.js"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.0",
     "csv-loader": "^3.0.3",
     "file-loader": "^6.1.1",
+    "html-webpack-plugin": "^4.5.0",
     "lodash": "^4.17.20",
     "style-loader": "^2.0.0",
     "webpack": "^5.2.0",
