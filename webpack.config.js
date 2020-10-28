@@ -19,6 +19,14 @@ module.exports = {
     filename: "[name].bundle.js",
     path: distPath,
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
@@ -28,6 +36,6 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
   ],
   optimization: {
-    moduleIds: 'named'
-  }
+    moduleIds: "named",
+  },
 };
