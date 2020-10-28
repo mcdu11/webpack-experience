@@ -2343,6 +2343,15 @@ mimic-fn@^2.1.0:
   resolved "http://172.16.148.174:8081/repository/npm/mimic-fn/-/mimic-fn-2.1.0.tgz#7ed2c2ccccaf84d3ffcb7a69b57711fc2083401b"
   integrity sha1-ftLCzMyvhNP/y3pptXcR/CCDQBs=
 
+mini-css-extract-plugin@^1.2.1:
+  version "1.2.1"
+  resolved "http://172.16.148.174:8081/repository/npm/mini-css-extract-plugin/-/mini-css-extract-plugin-1.2.1.tgz#30ea7dee632b3002b0c77aeed447790408cb247e"
+  integrity sha1-MOp97mMrMAKwx3ru1Ed5BAjLJH4=
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^3.0.0"
+    webpack-sources "^1.1.0"
+
 minimalistic-assert@^1.0.0:
   version "1.0.1"
   resolved "http://172.16.148.174:8081/repository/npm/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
@@ -3943,7 +3952,7 @@ webpack-merge@^5.2.0:
     clone-deep "^4.0.1"
     wildcard "^2.0.0"
 
-webpack-sources@^1.4.0:
+webpack-sources@^1.1.0, webpack-sources@^1.4.0:
   version "1.4.3"
   resolved "http://172.16.148.174:8081/repository/npm/webpack-sources/-/webpack-sources-1.4.3.tgz#eedd8ec0b928fbf1cbfe994e22d2d890f330a933"
   integrity sha1-7t2OwLko+/HL/plOItLYkPMwqTM=

@@ -1,7 +1,9 @@
 import _ from "lodash";
 import printMe from './print';
-import './assets/styles/index.css';
+import { hello } from './assets/styles/index.css';
+import { aboutBlue } from './assets/styles/about.css';
 
+console.log('hello and blue:', hello, aboutBlue)
 function component() {
   var element = document.createElement("div");
 
