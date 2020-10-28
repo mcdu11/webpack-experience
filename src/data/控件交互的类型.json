@@ -1,0 +1,47 @@
+{
+  "formId": "221300746087198720",
+  "data": {
+    "__overview__": "统计所有控件的交互类型",
+    "singleline": "single",
+    "mutilpleline": "mutilple",
+    "password": "password",
+    "count": 334.3,
+    "editor": "<p><strong>dasdasd</strong><strong class=\"ql-size-large\">【标题】</strong></p><p><strong class=\"ql-size-large\">asdasd</strong></p>",
+    "table": [
+      { "column16IuJR6dGN": "asd", "columnWG1UFzuB8w": "caa" },
+      { "column16IuJR6dGN": "asca", "columnWG1UFzuB8w": "aac" }
+    ],
+    "selett": 1,
+    "cascade": [1, 2],
+    "radio": 1,
+    "checkbox": ["2", "1"],
+    "timepicker": "16:20",
+    "datepicker": "2020-09-15T16:00:00.000Z",
+    "grade": 4,
+    "programcode": "ACASC4426057730523516730",
+    "contents": "",
+    "memberselector": [
+      { "sourceCode": "dwqa", "sourceName": "都文强a", "type": "USER" },
+      { "sourceCode": "ldn1", "sourceName": "ldn", "type": "USER" },
+      { "sourceCode": "zhanghelin", "sourceName": "zhl", "type": "USER" }
+    ],
+    "deptselector": [
+      { "sourceCode": "dept003", "sourceName": "dept003", "type": "DEPT" },
+      { "sourceCode": "dept002", "sourceName": "dept002", "type": "DEPT" },
+      { "sourceCode": "dept001", "sourceName": "dept001", "type": "DEPT" }
+    ],
+    "roleselector": [
+      {
+        "sourceCode": "AFP_NORMAL",
+        "sourceName": "应用工厂普通用户权限",
+        "type": "ROLE"
+      },
+      {
+        "sourceCode": "AFP_MANAGER",
+        "sourceName": "应用工厂管理员权限",
+        "type": "ROLE"
+      }
+    ],
+    "geolocation": "{\"address\":\"香港香港油尖旺区弥敦道666号\",\"lnglat\":[114.1808934593,22.322230460245]}"
+  }
+}
