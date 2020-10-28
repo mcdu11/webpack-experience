@@ -11,7 +11,7 @@ function component() {
   // lib
   element.innerHTML = _.join(["Hello", "webpack"], " ");
   // element.innerHTML = 'Hello webpak';
-  element.classList.add("hello");
+  element.classList.add(hello);
 
   var btn = document.createElement('button');
   btn.innerHTML = 'Click me and check the console!';

@@ -24,7 +24,7 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
             options: {
-              publicPath: "/css",
+              publicPath: "../",
               esModule: true,
               modules: {
                 namedExport: true,
@@ -43,6 +43,17 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.png$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "img/[name].[hash:8].[ext]",
+            },
+          },
+        ],
+      },
     ],
   },
   plugins: [
@@ -53,7 +64,7 @@ module.exports = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
-      filename: "css/[name].[hash].css",
+      filename: "css/[name].[hash:8].css",
       chunkFilename: "[id].css",
     }),
   ],

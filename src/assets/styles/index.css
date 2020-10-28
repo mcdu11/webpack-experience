@@ -3,5 +3,6 @@
 .hello {
   color: red;
   /* background-color: #000; */
-  /* background: url("../images/graph.png"); */
+  height: 200px;
+  background: url("../images/graph.png");
 }
