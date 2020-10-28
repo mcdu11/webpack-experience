@@ -9,7 +9,11 @@ module.exports = {
     app: "./src/index.js",
     print: "./src/print.js",
   },
-  devtool: 'inline-source-map',
+  devtool: "inline-source-map",
+  devServer: {
+    contentBase: "./dist",
+    port: 8081,
+  },
   output: {
     filename: "[name].bundle.js",
     path: distPath,
