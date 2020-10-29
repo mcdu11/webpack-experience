@@ -4,15 +4,18 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const webpack = require("webpack");
 
-const distPath = path.resolve(__dirname, "dist");
+function resolve(dir) {
+  return path.resolve(__dirname, dir);
+}
 
 module.exports = {
   entry: {
     app: "./src/index.js",
+    another: "./src/another-module.js",
   },
   output: {
-    filename: "[name].bundle.js",
-    path: distPath,
+    filename: "js/[name].bundle.js",
+    path: resolve("dist"),
   },
   module: {
     rules: [
@@ -67,5 +70,14 @@ module.exports = {
   ],
   optimization: {
     moduleIds: "named",
+    splitChunks: {
+      cacheGroups: {
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
+          chunks: "all",
+        },
+      },
+    },
   },
 };
