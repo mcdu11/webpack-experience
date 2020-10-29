@@ -11,10 +11,11 @@ function resolve(dir) {
 module.exports = {
   entry: {
     app: "./src/index.js",
-    another: "./src/another-module.js",
+    // another: "./src/another-module.js",
   },
   output: {
     filename: "js/[name].bundle.js",
+    chunkFilename: 'js/[name].bundle.js', // 非入口 chunk 的名称
     path: resolve("dist"),
   },
   module: {
@@ -70,7 +71,7 @@ module.exports = {
   ],
   optimization: {
     moduleIds: "named",
-    splitChunks: {
+    /* splitChunks: {
       cacheGroups: {
         commons: {
           test: /[\\/]node_modules[\\/]/,
@@ -78,6 +79,6 @@ module.exports = {
           chunks: "all",
         },
       },
-    },
+    }, */
   },
 };

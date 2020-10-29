@@ -1,9 +1,9 @@
-import _ from "lodash";
-import printMe from './print';
-import { hello } from './assets/styles/index.css';
-import { aboutBlue } from './assets/styles/about.css';
+// import _ from "lodash";
+import printMe from "./print";
+import { hello } from "./assets/styles/index.css";
+import { aboutBlue } from "./assets/styles/about.css";
 
-console.log('hello and blue:', hello, aboutBlue)
+console.log("hello and blue:", hello, aboutBlue);
 function component() {
   var element = document.createElement("div");
 
@@ -13,8 +13,8 @@ function component() {
   // element.innerHTML = 'Hello webpak';
   element.classList.add(hello);
 
-  var btn = document.createElement('button');
-  btn.innerHTML = 'Click me and check the console!';
+  var btn = document.createElement("button");
+  btn.innerHTML = "Click me and check the console!";
   btn.onclick = printMe;
 
   element.appendChild(btn);
@@ -22,13 +22,36 @@ function component() {
   return element;
 }
 
-document.body.appendChild(component());
+function getComponent() {
+  return import(/* webpackChunkName: "lodash" */ "lodash")
+    .then((module) => {
+      const _ = module.default || module;
+      var element = document.createElement("div");
+
+      element.innerHTML = _.join(["Hello", "webpack"], " ");
+
+      return element;
+    })
+    .catch((error) => {
+      console.log('import error', error)
+      return "An error occurred while loading the component"
+    });
+}
+
+// document.body.appendChild(component());
+setTimeout(() => {
+  getComponent()
+    .then((component) => {
+      document.body.appendChild(component);
+    })
+    .catch((err) => console.error(err));
+}, 4000);
 
 if (module.hot) {
-  module.hot.accept('./print.js', function() {
-    console.log('Accepting the updated printMe module!');
+  module.hot.accept("./print.js", function () {
+    console.log("Accepting the updated printMe module!");
     document.body.removeChild(element);
     element = component(); // Re-render the "component" to update the click handler
     document.body.appendChild(element);
-  })
+  });
 }
