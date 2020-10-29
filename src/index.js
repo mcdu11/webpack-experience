@@ -2,6 +2,9 @@
 import printMe from "./print";
 import { hello } from "./assets/styles/index.css";
 import { aboutBlue } from "./assets/styles/about.css";
+import { SayName } from './hello';
+
+SayName('dwq');
 
 console.log("hello and blue:", hello, aboutBlue);
 function component() {

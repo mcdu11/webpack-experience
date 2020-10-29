@@ -46,6 +46,11 @@
   resolved "http://172.16.148.174:8081/repository/npm/@types/json-schema/-/json-schema-7.0.6.tgz#f4c7ec43e81b319a9815115031709f26987891f0"
   integrity sha1-9MfsQ+gbMZqYFRFQMXCfJph4kfA=
 
+"@types/lodash@^4.14.163":
+  version "4.14.163"
+  resolved "http://172.16.148.174:8081/repository/npm/@types/lodash/-/lodash-4.14.163.tgz#6026f73c8267a0b7d41c7c8aadacfa2a5255774f"
+  integrity sha1-YCb3PIJnoLfUHHyKraz6KlJVd08=
+
 "@types/minimatch@*":
   version "3.0.3"
   resolved "http://172.16.148.174:8081/repository/npm/@types/minimatch/-/minimatch-3.0.3.tgz#3dca0e3f33b200fc7d1139c0cd96c1268cadfd9d"
@@ -542,6 +547,13 @@ braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
+braces@^3.0.1:
+  version "3.0.2"
+  resolved "http://172.16.148.174:8081/repository/npm/braces/-/braces-3.0.2.tgz#3454e1a462ee8d599e236df336cd9ea4f8afe107"
+  integrity sha1-NFThpGLujVmeI23zNs2epPiv4Qc=
+  dependencies:
+    fill-range "^7.0.1"
+
 browserslist@^4.14.5:
   version "4.14.5"
   resolved "http://172.16.148.174:8081/repository/npm/browserslist/-/browserslist-4.14.5.tgz#1c751461a102ddc60e40993639b709be7f2c4015"
@@ -631,7 +643,7 @@ caniuse-lite@^1.0.30001135:
   resolved "http://172.16.148.174:8081/repository/npm/caniuse-lite/-/caniuse-lite-1.0.30001151.tgz#1ddfde5e6fff02aad7940b4edb7d3ac76b0cb00b"
   integrity sha1-Hd/eXm//AqrXlAtO2306x2sMsAs=
 
-chalk@^2.4.1, chalk@^2.4.2:
+chalk@^2.3.0, chalk@^2.4.1, chalk@^2.4.2:
   version "2.4.2"
   resolved "http://172.16.148.174:8081/repository/npm/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
   integrity sha1-zUJUFnelQzPPVBpJEIwUMrRMlCQ=
@@ -1175,6 +1187,15 @@ end-of-stream@^1.0.0, end-of-stream@^1.1.0:
   dependencies:
     once "^1.4.0"
 
+enhanced-resolve@^4.0.0:
+  version "4.3.0"
+  resolved "http://172.16.148.174:8081/repository/npm/enhanced-resolve/-/enhanced-resolve-4.3.0.tgz#3b806f3bfafc1ec7de69551ef93cca46c1704126"
+  integrity sha1-O4BvO/r8HsfeaVUe+TzKRsFwQSY=
+  dependencies:
+    graceful-fs "^4.1.2"
+    memory-fs "^0.5.0"
+    tapable "^1.0.0"
+
 enhanced-resolve@^5.3.1:
   version "5.3.1"
   resolved "http://172.16.148.174:8081/repository/npm/enhanced-resolve/-/enhanced-resolve-5.3.1.tgz#3f988d0d7775bdc2d96ede321dc81f8249492f57"
@@ -1480,6 +1501,13 @@ fill-range@^4.0.0:
     is-number "^3.0.0"
     repeat-string "^1.6.1"
     to-regex-range "^2.1.0"
+
+fill-range@^7.0.1:
+  version "7.0.1"
+  resolved "http://172.16.148.174:8081/repository/npm/fill-range/-/fill-range-7.0.1.tgz#1919a6a7c75fe38b2c7c77e5198535da9acdda40"
+  integrity sha1-GRmmp8df44ssfHflGYU12prN2kA=
+  dependencies:
+    to-regex-range "^5.0.1"
 
 finalhandler@~1.1.2:
   version "1.1.2"
@@ -2078,6 +2106,11 @@ is-number@^3.0.0:
   dependencies:
     kind-of "^3.0.2"
 
+is-number@^7.0.0:
+  version "7.0.0"
+  resolved "http://172.16.148.174:8081/repository/npm/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
+  integrity sha1-dTU0W4lnNNX4DE0GxQlVUnoU8Ss=
+
 is-path-cwd@^2.0.0:
   version "2.2.0"
   resolved "http://172.16.148.174:8081/repository/npm/is-path-cwd/-/is-path-cwd-2.2.0.tgz#67d43b82664a7b5191fd9119127eb300048a9fdb"
@@ -2240,7 +2273,7 @@ loader-runner@^4.1.0:
   resolved "http://172.16.148.174:8081/repository/npm/loader-runner/-/loader-runner-4.1.0.tgz#f70bc0c29edbabdf2043e7ee73ccc3fe1c96b42d"
   integrity sha1-9wvAwp7bq98gQ+fuc8zD/hyWtC0=
 
-loader-utils@^1.0.0, loader-utils@^1.2.3:
+loader-utils@^1.0.0, loader-utils@^1.0.2, loader-utils@^1.2.3:
   version "1.4.0"
   resolved "http://172.16.148.174:8081/repository/npm/loader-utils/-/loader-utils-1.4.0.tgz#c579b5e34cb34b1a74edc6c1fb36bfa371d5a613"
   integrity sha1-xXm140yzSxp07cbB+za/o3HVphM=
@@ -2330,6 +2363,14 @@ memory-fs@^0.4.1:
     errno "^0.1.3"
     readable-stream "^2.0.1"
 
+memory-fs@^0.5.0:
+  version "0.5.0"
+  resolved "http://172.16.148.174:8081/repository/npm/memory-fs/-/memory-fs-0.5.0.tgz#324c01288b88652966d161db77838720845a8e3c"
+  integrity sha1-MkwBKIuIZSlm0WHbd4OHIIRajjw=
+  dependencies:
+    errno "^0.1.3"
+    readable-stream "^2.0.1"
+
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "http://172.16.148.174:8081/repository/npm/merge-descriptors/-/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
@@ -2363,6 +2404,14 @@ micromatch@^3.1.10, micromatch@^3.1.4:
     regex-not "^1.0.0"
     snapdragon "^0.8.1"
     to-regex "^3.0.2"
+
+micromatch@^4.0.0:
+  version "4.0.2"
+  resolved "http://172.16.148.174:8081/repository/npm/micromatch/-/micromatch-4.0.2.tgz#4fcb0999bf9fbc2fcbdd212f6d629b9a56c39259"
+  integrity sha1-T8sJmb+fvC/L3SEvbWKbmlbDklk=
+  dependencies:
+    braces "^3.0.1"
+    picomatch "^2.0.5"
 
 mime-db@1.44.0:
   version "1.44.0"
@@ -2835,6 +2884,11 @@ path-to-regexp@0.1.7:
   resolved "http://172.16.148.174:8081/repository/npm/path-to-regexp/-/path-to-regexp-0.1.7.tgz#df604178005f522f15eb4490e7247a1bfaa67f8c"
   integrity sha1-32BBeABfUi8V60SQ5yR6G/qmf4w=
 
+picomatch@^2.0.5:
+  version "2.2.2"
+  resolved "http://172.16.148.174:8081/repository/npm/picomatch/-/picomatch-2.2.2.tgz#21f333e9b6b8eaff02468f5146ea406d345f4dad"
+  integrity sha1-IfMz6ba46v8CRo9RRupAbTRfTa0=
+
 pify@^2.0.0:
   version "2.3.0"
   resolved "http://172.16.148.174:8081/repository/npm/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
@@ -3269,7 +3323,7 @@ semver@^5.5.0, semver@^5.6.0:
   resolved "http://172.16.148.174:8081/repository/npm/semver/-/semver-5.7.1.tgz#a954f931aeba508d307bbf069eff0c01c96116f7"
   integrity sha1-qVT5Ma66UI0we78Gnv8MAclhFvc=
 
-semver@^6.3.0:
+semver@^6.0.0, semver@^6.3.0:
   version "6.3.0"
   resolved "http://172.16.148.174:8081/repository/npm/semver/-/semver-6.3.0.tgz#ee0a64c8af5e8ceea67687b133761e1becbd1d3d"
   integrity sha1-7gpkyK9ejO6mdoexM3YeG+y9HT0=
@@ -3654,7 +3708,7 @@ table-layout@^1.0.0:
     typical "^5.2.0"
     wordwrapjs "^4.0.0"
 
-tapable@^1.1.3:
+tapable@^1.0.0, tapable@^1.1.3:
   version "1.1.3"
   resolved "http://172.16.148.174:8081/repository/npm/tapable/-/tapable-1.1.3.tgz#a1fccc06b58db61fd7a45da2da44f5f3a3e67ba2"
   integrity sha1-ofzMBrWNth/XpF2i2kT186Pme6I=
@@ -3722,6 +3776,13 @@ to-regex-range@^2.1.0:
     is-number "^3.0.0"
     repeat-string "^1.6.1"
 
+to-regex-range@^5.0.1:
+  version "5.0.1"
+  resolved "http://172.16.148.174:8081/repository/npm/to-regex-range/-/to-regex-range-5.0.1.tgz#1648c44aae7c8d988a326018ed72f5b4dd0392e4"
+  integrity sha1-FkjESq58jZiKMmAY7XL1tN0DkuQ=
+  dependencies:
+    is-number "^7.0.0"
+
 to-regex@^3.0.1, to-regex@^3.0.2:
   version "3.0.2"
   resolved "http://172.16.148.174:8081/repository/npm/to-regex/-/to-regex-3.0.2.tgz#13cfdd9b336552f30b51f33a8ae1b42a7a7599ce"
@@ -3741,6 +3802,17 @@ tryer@^1.0.1:
   version "1.0.1"
   resolved "http://172.16.148.174:8081/repository/npm/tryer/-/tryer-1.0.1.tgz#f2c85406800b9b0f74c9f7465b81eaad241252f8"
   integrity sha1-8shUBoALmw90yfdGW4HqrSQSUvg=
+
+ts-loader@^8.0.7:
+  version "8.0.7"
+  resolved "http://172.16.148.174:8081/repository/npm/ts-loader/-/ts-loader-8.0.7.tgz#9ce70db5b3906cc9143a09c54ff5247d102ea974"
+  integrity sha1-nOcNtbOQbMkUOgnFT/UkfRAuqXQ=
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^4.0.0"
+    loader-utils "^1.0.2"
+    micromatch "^4.0.0"
+    semver "^6.0.0"
 
 tslib@^1.10.0, tslib@^1.9.0:
   version "1.14.1"
@@ -3764,6 +3836,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://172.16.148.174:8081/repository/npm/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@^4.0.5:
+  version "4.0.5"
+  resolved "http://172.16.148.174:8081/repository/npm/typescript/-/typescript-4.0.5.tgz#ae9dddfd1069f1cb5beb3ef3b2170dd7c1332389"
+  integrity sha1-rp3d/RBp8ctb6z7zshcN18EzI4k=
 
 typical@^5.0.0, typical@^5.2.0:
   version "5.2.0"
